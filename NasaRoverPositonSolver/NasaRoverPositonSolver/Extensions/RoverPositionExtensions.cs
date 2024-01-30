@@ -7,9 +7,11 @@ namespace NasaRoverPositonSolver.Extensions
     {
 
         /// <summary>
-        /// Rover moving
+        ///  Rover moving
         /// </summary>
         /// <param name="rover"></param>
+        /// <param name="areaX"></param>
+        /// <param name="areaY"></param>
         /// <param name="moves"></param>
         public static void RoverMove(this Rover rover, int areaX, int areaY, string moves)
         {
@@ -35,6 +37,12 @@ namespace NasaRoverPositonSolver.Extensions
                     default:
                         Console.WriteLine($"Invalid Move {move}");
                         break;
+                }
+
+                if (areaX < rover.X || areaY < rover.Y)
+                {
+                    Console.WriteLine($"Rover is out of area!! X Axis = {areaX} Y Axis = {areaY}");
+                    break;
                 }
             }
            
