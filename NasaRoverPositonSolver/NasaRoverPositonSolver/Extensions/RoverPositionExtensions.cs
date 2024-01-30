@@ -27,10 +27,10 @@ namespace NasaRoverPositonSolver.Extensions
                         MoveSameDirection(rover);
                         break;
                     case 'L':
-                        RoverRotateLeft(rover);
+                        RoverTurnLeft(rover);
                         break;
                     case 'R':
-                        RoverRotateRight(rover);
+                        RoverTurnRight(rover);
                         break;
                     default:
                         Console.WriteLine($"Invalid Move {move}");
@@ -69,7 +69,7 @@ namespace NasaRoverPositonSolver.Extensions
         /// rover turn left
         /// </summary>
         /// <param name="rover"></param>
-        private static void RoverRotateLeft(Rover rover)
+        private static void RoverTurnLeft(Rover rover)
         {
             switch (rover.Direction)
             {
@@ -94,7 +94,7 @@ namespace NasaRoverPositonSolver.Extensions
         /// rover turn right
         /// </summary>
         /// <param name="rover"></param>
-        private static void RoverRotateRight(Rover rover)
+        private static void RoverTurnRight(Rover rover)
         {
             switch (rover.Direction)
             {
