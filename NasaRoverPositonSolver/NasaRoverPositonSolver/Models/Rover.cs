@@ -3,6 +3,9 @@ using NasaRoverPositonSolver.Models.Base;
 
 namespace NasaRoverPositonSolver.Models
 {
+    /// <summary>
+    /// Represent rover model with base vehicle class
+    /// </summary>
     public class Rover : BaseVehicle
     {
         public Rover()
