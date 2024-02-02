@@ -15,7 +15,6 @@ namespace NasaRoverPositonSolver.Models
             Direction = DirectionEnum.S;
         }
 
-
         /// <summary>
         ///  Rover moving
         /// </summary>
