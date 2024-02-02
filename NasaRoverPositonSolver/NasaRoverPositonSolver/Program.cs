@@ -1,6 +1,5 @@
 ﻿
 using NasaRoverPositonSolver.Enums;
-using NasaRoverPositonSolver.Extensions;
 using NasaRoverPositonSolver.Models;
 
 var rover = new Rover();
@@ -55,7 +54,7 @@ string moves = Console.ReadLine();
 
 try
 {
-    rover.RoverMove(Convert.ToInt32(fieldSize[0]), Convert.ToInt32(fieldSize[1]), moves);
+    rover.MoveVehicle(Convert.ToInt32(fieldSize[0]), Convert.ToInt32(fieldSize[1]), moves);
     Console.Write("Rover last position => ");
     Console.WriteLine($"{rover.X} {rover.Y} {rover.Direction.ToString()}");
 }
